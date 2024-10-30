@@ -12,3 +12,4 @@ def calculate_bmi(height,weight):
         print("Normal Weight")
 
 calculate_bmi(weight=57, height=1.73)
+
