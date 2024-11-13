@@ -36,16 +36,18 @@ def sort_temperature(input_list):
     print("sort_temperature")
     input_list.sort()
 
-def calc_median_temperature(input_list):
+def calc_median_temperature(sortedlist):
     print("calc_median_temperature")
-    cnt = len(input_list)
+    sortedlist.sort()
+    cnt = len(sortedlist)
 
     if cnt % 2 is 1:
-        median = input_list[(cnt-1)//2]
+        median = sortedlist[(cnt-1)//2]
 
     else:
-        median = (input_list[cnt//2] + input_list[cnt//2-1])//2
+        median = (sortedlist[cnt//2] + sortedlist[cnt//2-1])//2
     print ("Median = ", median)
+    return median
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
